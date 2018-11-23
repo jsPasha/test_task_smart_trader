@@ -90,7 +90,20 @@ p {
 
 .main_content {
   background-color: #c2c2c2;
-  min-height: 100vh;
+	min-height: 100vh;
+	position: relative;
+	> * {
+		position: relative;
+		z-index: 1;
+	}
+}
+
+.bad_gradient {
+	position: absolute;
+	z-index: 0;
+	left: 0;
+	top: 0;
+	width: 100%;
 }
 
 .main_sect {
@@ -177,6 +190,7 @@ h3 {
 }
 
 .to_cart {
+	font-weight: 600;
   &:hover {
     background-color: #00905e;
     color: #fff;
