@@ -1,4 +1,4 @@
-var staticPath = "/img/";
+var staticPath = "img/";
 
 // Fetched from server
 var products = [
